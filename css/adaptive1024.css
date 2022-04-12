@@ -1,0 +1,352 @@
+@media (max-width: 1024px) {
+    .grid {
+        display: grid;
+        grid-template-areas:
+        "my-header"
+        "my-main"
+        "my-aside";
+        gap: 12px 0;
+    }
+
+/*header*/
+    .header {
+        box-shadow: none;
+    }
+
+    .header__wrap {
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 12px;
+    }
+    .header__logo {
+        font-size: 24px;
+        line-height: 1.34;
+        margin-right: 10px;
+    }
+    
+    .header__nav {
+        display: none;
+    }
+    
+    .header__find {
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .header__find input {
+        padding-left: 15px;
+        padding-right: 20px;
+        line-height: 1.34;
+    }
+    
+    .header__find input::placeholder {
+        font-size: 14px;
+    }
+    
+    .header__date {
+       display: none;
+    }
+    
+    .header__personal {
+        width: 36px;
+        height: 36px;
+        flex: 0 0 36px;
+    }
+
+/*main*/
+
+    .main-display {
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    .main-display__trailer {
+        height: 120px;
+        padding: 10px 0 10px 10 px;
+    }
+    
+    .main-display__views {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.34;
+    }
+    
+    .main-display__header {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.34;
+    }
+    
+    .main-display__date {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.34; 
+    }
+    
+    .title {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        align-content:center;
+    }
+    
+    .title__main {
+        font-size: 14px;
+        line-height: 1.34;
+    }
+    
+    .title__count {
+        font-size: 10px;
+        line-height: 1.34;
+        margin-left: 10px;
+    }
+    
+
+    .title__right span {
+        font-size: 12px;
+        line-height: 1.34;
+    }
+    
+    .title__right img {
+        width: 10px;
+        height: 10px;
+    }
+
+/*trending*/
+    
+    .trending, .popular {
+        padding-right: 0;
+    }
+
+    .trending__footer-left {
+        display: flex;
+        column-gap: 12px;
+    }
+    
+    .trending__item {
+        display: none;
+    }
+    
+    .trending__item:nth-child(1) {
+        display: flex;
+        width: 100%;
+        height: 120px;
+        padding: 10px 0 10px 10 px;
+    }
+    
+    .trending__header {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.34;
+    }
+
+    .trending__date {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.34;
+    }
+
+    .trending__time {
+        padding: 10px 10px;
+        font-size: 10px;
+        line-height: 1.34;
+    }
+
+    .trending__plash {
+        top: 10px;
+        left: 10px;
+        font-size: 12px;
+        line-height: 1.34;
+    }
+
+/*popular*/
+    
+    .popular__item {
+        display: none;
+    }
+    
+    .popular__item:nth-child(1) {
+        display: flex;
+        width: 100%;
+        height: 120px;
+        padding: 0;
+    }
+    
+    .popular__header {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.34;
+    }
+    
+    .popular__date {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.34;
+    }
+    
+    .popular__rating span {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.34;
+    }
+    
+    .popular__img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .popular__footer,
+    .trending__footer {
+        padding: 5px 5px 5px 12px;
+    }
+
+    .popular__footer-left {
+        display: flex;
+        column-gap: 12px;
+    }
+
+/*aside*/
+
+    .aside {
+        padding-right: 0;
+    }
+    
+    .aside__wrap {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .aside__top {
+        padding: 0;
+        border-right:none;
+    }
+    
+    .aside__title {
+        margin-bottom: 10px;
+    }
+    
+    .aside__sort-img {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.4rem;
+    }
+    
+    .aside__sort-img img {
+        width: 4px;
+        height: 4px;
+    }
+    
+    .aside__header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.34;
+    }
+    
+    .aside__sort-text {
+        font-size: 12px;
+        line-height: 1.34;
+    }
+    
+    .aside__sort-select span {
+        font-size: 12px;
+        line-height: 1.34;
+    }
+    
+    .aside__item {
+        display: none;
+    }
+    
+    .aside__item:nth-child(2) {
+        display: flex;
+        width: 100%;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    
+    .aside__views {
+        position: relative;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.34;
+    }
+    
+    .aside__item-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.34;
+    }
+    
+    .aside__item-date {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.34;
+    }
+
+    .aside__favorite {
+        margin: 0px 0px 10px;
+    }
+
+    .aside__footer-bottom:before {
+        position: absolute;
+        top: -10%;
+    }
+
+
+    .aside__favorite-text {
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 1.34;
+    }
+        
+    .aside__genre {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 10px;
+        line-height: 1.34;
+    }
+    
+    .aside__add {
+        font-size: 12px;
+        line-height: 1.34;
+        margin-bottom: 0;
+    }
+    
+    .aside__add-round {
+        width: 10px;
+        height: 10px;
+    }
+
+    .aside:after {
+        display: none;
+    }
+
+/*кнопки*/
+
+    .trending__item .button-play__wrap,
+    .popular__item .button-play__wrap {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        flex: 0 0 36px;
+        top: auto;
+        left: auto;
+        transform: none;
+        
+    }
+
+    .button-play__wrap {
+        width: 36px;
+        height: 36px;
+    }
+
+    .button-play, 
+    .button-play__wrap.small-plus .button-play,
+    .button-play__wrap.small .button-play {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7.5px 0 7.5px 12px;
+        border-color: transparent transparent transparent #FFF;
+    }
+}
