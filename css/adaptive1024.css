@@ -34,9 +34,9 @@
     }
     
     .header__find input {
-        padding-left: 15px;
-        padding-right: 20px;
+        padding-right: 8px;
         line-height: 1.34;
+        background-position: top 50% right 8px;
     }
     
     .header__find input::placeholder {
@@ -48,9 +48,64 @@
     }
     
     .header__personal {
-        width: 36px;
+        /* width: 36px;
         height: 36px;
-        flex: 0 0 36px;
+        flex: 0 0 36px; */
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        flex: 0 0 40px;
+        margin-left: 10px;
+    }
+
+    .burger__button {
+        width: 40px;
+        height: 35px;
+    }
+
+    .burger-box {
+        display: none;
+        position: fixed;
+        background-color:black;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+   .burger-box__header {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+   .burger-box__logo {
+       font-size: 24px;
+       line-height: 1.34;
+    }
+
+   .burger-box__close {
+       width: 14px;
+       height: 14px;
+    }
+
+    .burger-box__main {
+        margin-left: 12px;
+        margin-top: 20px;
+    }
+
+    .burger-box__item {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.34;
+    }
+
+    .burger-box._active {
+        display: block;
     }
 
 /*main*/

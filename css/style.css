@@ -155,6 +155,14 @@ input {
     flex: 0 0 6rem;
 }
 
+.header__burger {
+    display: none;
+}
+
+.burger-box {
+    display: none;
+}
+
 .main-display {
     padding-top: 5rem;
 }
@@ -690,7 +698,7 @@ input {
 }
 
 /*сетка*/
-@media (max-width: 108em) {
+/* @media (max-width: 108em) {
     html {
         font-size: 9px;
     }
@@ -778,7 +786,7 @@ input {
     html {
         font-size: 4.4px;
     }
-}
+} */
 
 /*сетка*/
 

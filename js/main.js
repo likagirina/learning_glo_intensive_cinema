@@ -21,3 +21,15 @@ modalWindow.addEventListener('click', () => {
     }
     stopAllYouTubeVideos();
 });
+
+const burgerButton = document.querySelector('.burger__button');
+const burgerBox = document.querySelector('.burger-box');
+const burgerBoxClose = document.querySelector('.burger-box__close');
+
+burgerButton.addEventListener('click', () => {
+    burgerBox.classList.add('_active');
+});
+
+burgerBoxClose.addEventListener('click', () => {
+    burgerBox.classList.remove('_active');
+});
